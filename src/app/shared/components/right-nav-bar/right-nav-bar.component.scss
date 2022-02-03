@@ -1,0 +1,24 @@
+@import "variables";
+
+.rigth-nav-bar {
+  position: fixed;
+  height: calc(100% - 215px);
+  width: 300px;
+  padding-top: 15px;
+  right: 8%;
+  top: 100px;
+  background-color: #fff;
+  background: $secondary-color;
+
+  .rigth-nav-bar__box {
+    height: 150px;
+    background: $primary-color;
+    margin: 5% 10%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .rigth-nav-bar {
+    display: none;
+  }
+}

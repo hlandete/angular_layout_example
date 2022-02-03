@@ -1,0 +1,8 @@
+<div class="main">
+  <app-article
+    *ngFor="let article of articles_a; let i = index"
+    [article]="article"
+    [isFirst]="i == 0 ? true : false"
+  ></app-article>
+</div>
+<app-right-nav-bar></app-right-nav-bar>

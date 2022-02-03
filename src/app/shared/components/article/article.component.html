@@ -1,0 +1,8 @@
+<article [ngClass]="isFirst == false ? 'hasSeparator' : ''">
+  <div>
+    <h1>{{ article.title }}</h1>
+    <p [ngClass]="article.specialStyle ? 'special' : ''">
+      {{ article.body }}
+    </p>
+  </div>
+</article>

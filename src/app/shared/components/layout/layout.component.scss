@@ -1,0 +1,21 @@
+@import "variables";
+
+.main {
+  background-color: white;
+  position: fixed;
+  top: 100px;
+  left: 8%;
+  right: calc(8% + 300px);
+  height: calc(100% - 215px);
+  padding: 15px 1% 0 1%;
+}
+
+@media (max-width: 1023px) {
+  .main {
+    right: 0;
+    left: 0;
+    top: 85px;
+    width: 100%;
+    margin-top: 60px;
+  }
+}

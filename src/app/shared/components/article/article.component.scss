@@ -1,0 +1,28 @@
+@import "variables";
+
+article {
+  padding: 15px 0;
+  margin: 0px 3%;
+  h1,
+  p {
+    margin: 1% 0 0 0;
+  }
+
+  p.special {
+    margin-left: 3%;
+    padding-left: 3%;
+    border-left: 4px solid $background-color;
+  }
+}
+
+article.hasSeparator {
+  border-top: 2px #c1c1c1 solid;
+}
+
+@media (max-width: 1023px) {
+  article {
+    p.separated {
+      margin-left: 5%;
+    }
+  }
+}

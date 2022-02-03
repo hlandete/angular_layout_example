@@ -1,0 +1,12 @@
+@import "variables";
+
+* {
+  font-family: $primary-font-family;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $background-color;
+  height: 100vh;
+}

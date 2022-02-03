@@ -1,0 +1,62 @@
+@import "variables";
+
+.footer {
+  position: fixed;
+  width: 100%;
+  background: $primary-color;
+  padding: 10px;
+  height: 80px;
+  bottom: 0;
+  text-align: center;
+
+  .footer__nav-bar {
+    display: flex;
+    float: left;
+    width: 250px;
+
+    margin: 10px 0 0 10%;
+    color: white;
+    span {
+      background-color: $button-primary-color;
+      padding: 15px 0;
+      flex: 1;
+      cursor: pointer;
+      &:hover {
+        background-color: $button-primary-color;
+      }
+    }
+  }
+
+  .footer__social-media {
+    display: flex;
+    float: right;
+    margin: 10px 10% 0 0;
+    color: white;
+    span {
+      background-color: $button-secondary-color;
+      padding: 15px 15px;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    height: 100px;
+    .footer__nav-bar {
+      width: 75%;
+      margin: auto;
+      float: none;
+    }
+
+    .footer__social-media {
+      width: 35%;
+      margin: auto;
+      float: none;
+      span {
+        padding: 15px 10%;
+        width: 50px;
+      }
+    }
+  }
+}
